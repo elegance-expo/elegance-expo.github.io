@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegance Expo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #faf0f8, #e6e6fa);
+      color: #333;
+    }
+
+    /* Header Styling */
+    .main-header {
+      padding: 20px 20px 20px;
+      background: linear-gradient(to right, #9f5de2, #7f41c3);
+      color: white;
+      text-align: center;
+    }
+
+    .brand-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* gap: 15px; */
+      flex-wrap: wrap;
+      /* margin-bottom: 10px; */
+      transition: transform 0.3s ease;
+    }
+
+    .brand-container:hover {
+      transform: scale(1.02);
+    }
+
+    .site-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 12px;
+      object-fit: cover;
+      /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
+      transition: transform 0.3s ease;
+    }
+
+    /* .site-logo:hover {
+      transform: rotate(1deg) scale(1.05);
+    } */
+
+    .brand-container h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: text-shadow 0.4s ease;
+    }
+
+    .brand-container h1:hover {
+      text-shadow: 0 0 2px #fff;
+    }
+
+    .subheader {
+      font-size: 1.3rem;
+      color: #ffe;
+      opacity: 0.9;
+      transition: color 0.3s ease;
+    }
+
+    .subheader:hover {
+      color: #ffffff;
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
+    }
+
+    /* Description Box */
+    .description-box {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffffee;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 30px 25px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .description-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+      margin: 0;
+    }
+
+    /* Instagram Embeds */
+    .embed-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      padding: 50px 20px;
+      justify-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .insta-card {
+      width: 100%;
+      max-width: 340px;
+      /* overflow: hidden; */
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .insta-card:hover {
+      transform: scale(1.04);
+    }
+
+    .insta-card blockquote.instagram-media {
+      height: 100%;
+      width: 100%;
+      transform: scale(1);
+      transition: transform 0.3s ease;
+    }
+
+    .insta-card:hover blockquote.instagram-media {
+      transform: scale(1.05);
+    }
+
+    /* Footer Styling */
+    footer {
+      background: linear-gradient(to right, #5a2a83, #b19cd9);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 1rem;
+    }
+
+    .footer-container p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    footer a {
+      color: #ffe;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .insta-icon-link {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .insta-icon-link:hover {
+      transform: scale(1.2);
+    }
+
+    .insta-icon {
+      width: 26px;
+      height: 26px;
+      vertical-align: middle;
+      border-radius: 6px;
+      transition: filter 0.3s ease;
+    }
+
+    .insta-icon:hover {
+      filter: brightness(1.2);
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .brand-container h1 {
+        font-size: 2rem;
+      }
+
+      .subheader {
+        font-size: 1rem;
+      }
+
+      .description-box p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="main-header">
+    <div class="brand-container">
+      <img src="https://d361nn0tbycf2u.cloudfront.net/company/oLtaHhvFFapeELFro_c/node/6577fafe1b4ad944713ed970/1751549283879_original.jpeg"
+           alt="Elegance Expo Logo" class="site-logo" />
+      <h1>Elegance Expo</h1>
+    </div>
+    <div class="subheader">Celebrate Artistry, Culture, and Contemporary Style</div>
+  </div>
+  <!-- Description -->
+  <div class="description-box">
+    <p>
+      Explore and shop from an exquisite and thoughtfully curated collection that celebrates craftsmanship,
+      tradition, and contemporary style. Discover a wide array of Fashion Apparel, elegant Kurtis, and intricately
+      designed Rakhis perfect for festive occasions. Choose from a premium selection of Accessories, chic Bags,
+      and tasteful Home Decor that reflect sophistication and cultural richness.
+    </p>
+  </div>
+  <div class="description-box">
+    <p>
+      Elegance Expo is a curated <strong>Event Planner & Boutique Showcase</strong> platform that celebrates craftsmanship,
+      tradition, and contemporary style. Explore and shop from an exquisite collection featuring Fashion Apparel,
+      elegant Kurtis, intricately designed Rakhis, Accessories, chic Bags, and tasteful Home Decor that reflect
+      cultural richness and sophistication.
+    </p>
+  </div>
+
+  <!-- Instagram Embeds -->
+  <div class="embed-grid">
+    <div class="insta-card">
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/DHfyrCNpaq1/?igsh=MWRpMHpsMHRsb2dkdw=="
+        data-instgrm-version="14"
+        style="background:#fff; border:0; margin:0; padding:0;"></blockquote>
+    </div>
+    <div class="insta-card">
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/DLLH4QYB6WT/?igsh=bHVtbzN3dnFuNGxw"
+        data-instgrm-version="14"
+        style="background:#fff; border:0; margin:0; padding:0;"></blockquote>
+    </div>
+    <div class="insta-card">
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/DHfGYQkBqyi/?igsh=bHl4OTB2Y3E0Y3Rl"
+        data-instgrm-version="14"
+        style="background:#fff; border:0; margin:0; padding:0;"></blockquote>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>
+        <a href="https://www.instagram.com/elegance_expo1/" target="_blank" class="insta-icon-link"
+          aria-label="Instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
+            class="insta-icon">
+        </a>
+      </p>
+      <p>Contact: <a href="mailto:eleganceexpo25@gmail.com">eleganceexpo25@gmail.com</a></p>
+      <p>&copy; 2025 <strong>Elegant Info Pvt Ltd</strong></p>
+    </div>
+  </footer>
+
+  <!-- Instagram Embed Script -->
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+</body>
+
+</html>
